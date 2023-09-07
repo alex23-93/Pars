@@ -9,8 +9,6 @@ headers = {'accept': '*/*', 'user-agent': ua.firefox}
 
 
 def pars():
-    """Создаем файл csv. для записи('w') енкодинг для нормальной записи на винде,
-    newline-для того, чтобы записывалось без пропуска полей, delimiter=';'- чтобы записывалось в разные столбцы!!!"""
 
     with open('num_animal.csv', 'w', encoding='cp1251', newline='') as file:
         writer = csv.writer(file, delimiter=';')
